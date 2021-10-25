@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\API.Data\Data.csproj" />
+    <ProjectReference Include="..\API.Domain\Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Service\" />
+    <None Remove="Service\Anuncio\" />
+    <None Remove="Service\User\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Service\" />
+    <Folder Include="Service\Anuncio\" />
+    <Folder Include="Service\User\" />
+  </ItemGroup>
+</Project>
